@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+  <head></head>
+  <body>
+    <style>
+      *{ /* 해당 문서의 모든요소에 일괄적용 */
+        border-collapse: collapse;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+      }
+      
+      table{
+        border: 2px solid black
+      }
+      table > thead > tr > th{
+        border: 1px solid black
+      }
+      table > tbody > tr > td{
+        background-color: aqua;
+        border: 1px solid black
+        
+      }
+
+      .blankPosition{
+        width: 100%;
+        background-color: chartreuse;
+        height: 100px;
+      }
+      .relativePosition{
+        width: 100%;
+        background-color: coral;
+        height: 80px
+      }
+      .relativePosition > div{
+        padding: 50px;
+        background-color: aqua;
+        margin-top: 20px;
+      }
+      .absolutePosition{
+        width: 100%;
+        background-color: crimson;
+        height: 60px;
+      }
+      .fixedPosition{
+        width: 100%;
+        background-color: blue;
+        height: 40px;
+      }
+      
+      div > span{
+        display: none
+        background-color: brown;
+        border: 1px solid white
+      }
+      div > div{
+        background-color: chartreuse;
+        display: inline
+        border: 1px solid black
+        
+      }
+    </style>
+    <div>
+      <span>연습용</span>
+      <span>디자인</span>
+      <span>입니다</span>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    <table>
+      <thead> <!--표의 항목 부분-->
+        <tr> <!--span과 같이 th와 td를 한줄에 나열하게 해줌-->
+          <th>이름</th> <!--키-->
+          <th>성별</th>
+          <th>나이</th>
+          <th>키</th>
+        </tr>
+      </thead>
+      <tbody> <!--표의 내용 부분-->
+        <tr>
+          <td>Feels</td> <!--밸류-->
+          <td>남</td>
+          <td>29</td>
+          <td>173cm</td>
+        </tr>
+        <tr>
+          <td>실험맨</td>
+          <td>남</td>
+          <td>36</td>
+          <td>190cm</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="blankPosition">
+      <div>blank</div>
+    </div>
+    <div class="relativePosition">
+      <div>relative</div>
+    </div>
+    <div class="absolutePosition">
+      <div>absolute</div>
+    </div>
+    <div class="fixedPosition">
+      <div>fixed</div>
+    </div>
+
+    <div>
+      <span>span</span>
+      <span>span</span>
+    </div>
+    
+    <div>
+      <div>div</div>
+      <div>div</div>
+    </div>
+  </body>
